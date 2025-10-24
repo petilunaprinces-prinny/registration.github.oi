@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color: #d196f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: hwb(269 60% 6%);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(96, 92, 185, 0.941);
+      width: 400px;
+      position: relative;
+      border: 2px dashed #0e1b5e;
+    }
+
+    .form-container::before,
+    .form-container::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-image: royalblue
+    }
+
+    .form-container::before {
+      top: -30px;
+      left: -30px;
+      transform: rotate(-20deg);
+    }
+
+    .form-container::after {
+      bottom: -30px;
+      right: -30px;
+      transform: rotate(20deg);
+    }
+
+    h2 {
+      text-align: center;
+      color: #160672;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #000000;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #0202c7;
+      border-radius: 10px;
+      background-color: #7037f5;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #8d38e1;
+      border: none;
+      border-radius: 10px;
+      color: rgb(4, 1, 17);
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2206d7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 12px;
+      color: #570dea;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🖊Student Registration🖊</h2>
+    <form action="Thank you!.html" method="get">
+    <form>
+      <label for="name">Last Name</label>
+      <input type="text" name="name" required>
+
+      <label for="name">First Name</label>
+      <input type="text" name="name" required>
+
+      <label for="name">Middle Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" required>
+
+      <label for="contact number">Contact Number</label>
+      <input type="contact number" name="contact number" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>others</option>
+      </select>
+
+    <form>
+      <label for="course">Course</label>
+      <select id="course" name="course" rquired>
+        <option value="">Select</option>
+        <option>Bachelor of Industrial Technology Major in Electronics Technology</option>
+        <option>Bachelor of Industrial Technology Major in Computer Technology</option>
+        <option>Bachelor of Science in Hospitality Management</option>
+        <option>Bachelor of Science in Tourism Management</option>
+        <option>Bachelor of Secondary Education Major in Filipino</option>
+        <option>Bachelor of Secondary Education Major in Mathematics</option>
+        <option>Bachelor of Secondary Education Major in English</option>
+        <option>Bachelor of Secondary Education Major in Social Study</option>
+        <option>Bachelor of Elementary Education </option>
+      <input type="submit"></input>
+    <div class="footer">
+  </div>
+ </div>
+</body>
+</html>
